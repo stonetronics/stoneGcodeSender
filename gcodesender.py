@@ -312,7 +312,7 @@ def sendGcode():
     fileAsString=str(fileDisplayText.get("1.0", "end-1c"))
     #print("De fayle es a string: " + fileAsString)
     
-    start_new_thread(gcodeSender, ( port, fileAsString, '>', updateConsoleOutput))
+    start_new_thread(gcodeSender, ( port, fileAsString, readyCharacterEntry.get(), updateConsoleOutput))
 
 #send button
 sendButtonFrame = tkinter.Frame(bottomFrame)
