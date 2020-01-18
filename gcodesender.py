@@ -7,6 +7,7 @@ import os
 import sys
 import glob
 from _thread import start_new_thread
+#import gcodeDisplay
 
 #serial ports enlistment
 def getSerialPorts():
@@ -273,6 +274,10 @@ fileDisplayScrollbar.pack(side = tkinter.RIGHT, fill = tkinter.Y)
 fileDisplayText.pack(side = tkinter.LEFT, fill = tkinter.Y)
 fileDisplayScrollbar.config(command = fileDisplayText.yview)
 fileDisplayText.config(yscrollcommand = fileDisplayScrollbar.set)
+#def plotPath():
+#    gcodeDisplay.GcodeDisplay(gcode = str(fileDisplayText.get("1.0", "end-1c")))
+#filePlotButton = tkinter.Button(fileDisplayFrame, text = 'plot path', command = plotPath)
+#filePlotButton.pack()    
 
 
 

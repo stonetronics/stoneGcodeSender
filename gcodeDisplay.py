@@ -131,8 +131,8 @@ class GcodeDisplay:
         app = GcodeDisplayApp(self.data)
         app.mainloop() 
 
-#f = open("testFile2.gcode", "r")
+f = open("straitclarkyBothSides.gcode", "r")
 
-#GcodeDisplay(gcode = f.read())
+GcodeDisplay(gcode = f.read())
 
-#f.close()
+f.close()

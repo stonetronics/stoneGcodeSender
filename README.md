@@ -14,4 +14,6 @@ The gcode file that is to be sent can be opened, viewed and edited before sendin
 A "ready" character can be specified. this is the character or string the machine sends when it is ready to accept input
 By pushing the send button, the gcode in the edit window will be sent to the machine and the output will be displayed in an output field.
 
+There is also a gcode viewer script that displays the gcode in the specified file. (needs matplotlib to work). edit the path in the python file to select a gcode file
+
 feel free to edit
